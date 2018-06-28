@@ -1,0 +1,43 @@
+{
+  "name": "csprsg",
+  "version": "1.0.0",
+  "description": "Creates cryptographically secure pseudo random strings",
+  "keywords": [
+    "crypto",
+    "secure",
+    "psuedo",
+    "random",
+    "string",
+    "typed",
+    "async",
+    "await"
+  ],
+  "homepage": "https://github.com/ryanstaniforth/csprsg",
+  "author": "Ryan Staniforth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryanstaniforth/csprsg.git"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules build",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "tslint -p .",
+    "prepublishOnly": "npm run clean && npm install && npm run build && npm run test && npm run lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.2",
+    "@types/node": "^10.3.6",
+    "jest": "^23.2.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "files": [
+    "build/**/*"
+  ]
+}

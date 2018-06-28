@@ -1,0 +1,14 @@
+{
+    "defaultSeverity": "error",
+    "extends": "tslint:all",
+    "rules": {
+        "quotemark": [true, "single"],
+        "typedef": [true, "call-signature", "arrow-call-signature", "parameter"],
+        "arrow-return-shorthand": true,
+        "no-magic-numbers": false,
+        "interface-name": [true, "never-prefix"],
+        "completed-docs": false,
+        "prefer-function-over-method": false,
+        "strict-type-predicates": false
+    }
+}
