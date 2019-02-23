@@ -9,6 +9,7 @@
         "interface-name": [true, "never-prefix"],
         "completed-docs": false,
         "prefer-function-over-method": false,
-        "strict-type-predicates": false
+        "strict-type-predicates": false,
+        "file-name-casing": [true, "camel-case", "pascal-case"]
     }
 }

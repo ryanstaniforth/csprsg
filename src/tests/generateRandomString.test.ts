@@ -3,6 +3,7 @@ import { generateSecureRandomString } from '../generateSecureRandomString';
 
 describe('generateSecureRandomString', () => {
     test('is a promise', async () => {
+        // tslint:disable-next-line:no-floating-promises
         expect(generateSecureRandomString(1))
             .toBeInstanceOf(Promise);
     });
